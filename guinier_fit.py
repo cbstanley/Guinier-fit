@@ -26,7 +26,7 @@ def read_datafile(f):
 
 def line(x, a, b):
     """
-    Fit function for optimize.curvefit
+    Fit function for optimize.curve_fit()
     """
     return a*x + b
 
