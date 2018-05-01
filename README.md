@@ -7,7 +7,7 @@ Simple script to perform a Guinier fit on small-angle scattering data.
 
 *I(0)* = intensity extrapolated to zero-angle
 
-*Rg* = radius of gyration
+*R<sub>g</sub>* = radius of gyration (Å)
 
 
-Relevant fit range is when *q_max * Rg* < 1.3
+Relevant fit range is when *q<sub>max</sub>* * *R<sub>g</sub>* < 1.3
