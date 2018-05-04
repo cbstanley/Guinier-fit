@@ -1,6 +1,6 @@
 ## Guinier fit
 
-Simple script to perform a Guinier fit on small-angle scattering data.
+Simple program to perform a Guinier fit on small-angle scattering data.
 
 
 ### Fit values:
