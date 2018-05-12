@@ -142,10 +142,15 @@ def plot(x2, logy, logyerr, x2_xlim, logy_xlim,
 # Steps:
 xdata, x2, logy, logyerr = guinier()
 
-x2_xlim, logy_xlim, popt, I0, Rg, qmaxRg, I0_err, Rg_err = \
-    guinier_fit(xdata, x2, logy, logyerr)
+refit = 'y'
 
-plot(x2, logy, logyerr, x2_xlim, logy_xlim, popt, I0, Rg, qmaxRg,
-     I0_err, Rg_err)
+while refit is 'y':
+    x2_xlim, logy_xlim, popt, I0, Rg, qmaxRg, I0_err, Rg_err = \
+        guinier_fit(xdata, x2, logy, logyerr)
 
-results(popt, I0, Rg, qmaxRg, I0_err, Rg_err)
+    plot(x2, logy, logyerr, x2_xlim, logy_xlim, popt, I0, Rg, qmaxRg,
+         I0_err, Rg_err)
+
+    results(popt, I0, Rg, qmaxRg, I0_err, Rg_err)
+
+    refit = input('Update fit range? y/n [default=n]: ') or 'n'
